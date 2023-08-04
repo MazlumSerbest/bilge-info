@@ -7,7 +7,7 @@ import * as Icon from "react-feather";
 
 export const siteTitle = "Bilge Kılıç";
 const name = "Bilge Kılıç";
-const linkedIn = "linkedin.com/in/bilge-kılıç-574890107";
+const linkedInUrl = "https://www.linkedin.com/in/bilge-kılıç-574890107";
 const mail = "bbilgekilic@gmail.com"
 
 export default function Layout({ children, home }) {
@@ -66,9 +66,9 @@ export default function Layout({ children, home }) {
                     <Icon.Mail className={utilStyles.linkIcon}></Icon.Mail>
                     <span className={utilStyles.linkText}>{mail}</span>
                 </a>
-                <a href={linkedIn} className={utilStyles.link}>
+                <a href={linkedInUrl} className={utilStyles.link}>
                     <Icon.Linkedin className={utilStyles.linkIcon}></Icon.Linkedin>
-                    <span className={utilStyles.linkText}>{linkedIn}</span>
+                    <span className={utilStyles.linkText}>linkedin.com/in/bilge-kılıç-574890107</span>
                 </a>
                 <main>{children}</main>
                 {!home && (
