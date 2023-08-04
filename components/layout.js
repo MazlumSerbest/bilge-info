@@ -62,14 +62,16 @@ export default function Layout({ children, home }) {
                             </>
                         )}
                 </header>
-                <a href={"mailto:" + mail} className={utilStyles.link}>
-                    <Icon.Mail className={utilStyles.linkIcon}></Icon.Mail>
-                    <span className={utilStyles.linkText}>{mail}</span>
-                </a>
-                <a href={linkedInUrl} className={utilStyles.link}>
-                    <Icon.Linkedin className={utilStyles.linkIcon}></Icon.Linkedin>
-                    <span className={utilStyles.linkText}>linkedin.com/in/bilge-kılıç-574890107</span>
-                </a>
+                <section className={styles.linkSection}>
+                    <a href={"mailto:" + mail} className={utilStyles.link}>
+                        <Icon.Mail className={utilStyles.linkIcon}></Icon.Mail>
+                        <span className={utilStyles.linkText}>{mail}</span>
+                    </a>
+                    <a href={linkedInUrl} className={utilStyles.link}>
+                        <Icon.Linkedin className={utilStyles.linkIcon}></Icon.Linkedin>
+                        <span className={utilStyles.linkText}>linkedin.com/in/bilge-kılıç-574890107</span>
+                    </a>
+                </section>
                 <main>{children}</main>
                 {!home && (
                     <div className={styles.backToHome}>
