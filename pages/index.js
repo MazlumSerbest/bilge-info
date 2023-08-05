@@ -2,8 +2,20 @@ import Head from 'next/head';
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import * as Icon from "react-feather";
+import { useRouter, redirect } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+  let clickCount = 0;
+
+  const handleClick = () => {
+    clickCount++;
+
+    if (clickCount % 5 == 0) {
+      router.push("https://youtu.be/dQw4w9WgXcQ");
+    }
+  };
+
   return (
     <Layout home>
       <Head>
@@ -19,7 +31,7 @@ export default function Home() {
         <p>📩 Let's connect! I'm open to networking and exploring new opportunities in the tech industry and the world of yoga.</p>
       </section>
       <section className={utilStyles.heartSection}>
-        <Icon.Heart></Icon.Heart>
+        <Icon.Heart onClick={handleClick}/>
       </section>
     </Layout>
   )
