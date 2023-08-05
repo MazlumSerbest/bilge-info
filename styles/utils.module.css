@@ -65,3 +65,11 @@
     margin-right: 0.4rem;
     align-self: center;
 }
+
+.heartSection {
+  display: flex;
+  justify-content: center;
+  color: #db5856;
+  font-size: 1rem;
+  margin-top: 5rem;
+}
