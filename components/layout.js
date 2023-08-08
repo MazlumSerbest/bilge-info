@@ -23,6 +23,8 @@ export default function Layout({ children, home }) {
                     <meta name="og:title" content={siteTitle} />
                 </Head>
                 <header className={styles.header}>
+                    <section className={styles.headerCard}>
+                        
                     {home ? (
                         <>
                             <Image
@@ -55,17 +57,18 @@ export default function Layout({ children, home }) {
                                 </h2>
                             </>
                         )}
+                    <section className={styles.linkSection}>
+                        <a href={"mailto:" + mail} className={utilStyles.link}>
+                            <Icon.Mail className={utilStyles.linkIcon}></Icon.Mail>
+                            <span className={utilStyles.linkText}>{mail}</span>
+                        </a>
+                        <a href={linkedInUrl} className={utilStyles.link}>
+                            <Icon.Linkedin className={utilStyles.linkIcon}></Icon.Linkedin>
+                            <span className={utilStyles.linkText}>linkedin.com/in/bilge-kılıç-574890107</span>
+                        </a>
+                    </section>
+                    </section>
                 </header>
-                <section className={styles.linkSection}>
-                    <a href={"mailto:" + mail} className={utilStyles.link}>
-                        <Icon.Mail className={utilStyles.linkIcon}></Icon.Mail>
-                        <span className={utilStyles.linkText}>{mail}</span>
-                    </a>
-                    <a href={linkedInUrl} className={utilStyles.link}>
-                        <Icon.Linkedin className={utilStyles.linkIcon}></Icon.Linkedin>
-                        <span className={utilStyles.linkText}>linkedin.com/in/bilge-kılıç-574890107</span>
-                    </a>
-                </section>
                 <main>{children}</main>
                 {!home && (
                     <div className={styles.backToHome}>
