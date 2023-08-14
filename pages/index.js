@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from "../components/layout";
+import Layout, { name } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import * as Icon from "react-feather";
 import { useRouter, redirect } from "next/navigation";
@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>{name}</title>
       </Head>
       <section>
         <p>👋 Hello! I'm <strong>Bilge</strong>, an experienced professional in the tech industry.</p>

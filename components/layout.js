@@ -5,8 +5,7 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import * as Icon from "react-feather";
 
-export const siteTitle = "Bilge Kılıç";
-const name = "Bilge Kılıç";
+export const name = "Bilge Kılıç";
 const linkedInUrl = "https://www.linkedin.com/in/bilge-kılıç-574890107";
 const mail = "bbilgekilic@gmail.com"
 
@@ -20,7 +19,7 @@ export default function Layout({ children, home }) {
                         name="description"
                         content="Information About Bilge Kılıç"
                     />
-                    <meta name="og:title" content={siteTitle} />
+                    <meta name="og:title" content={name} />
                 </Head>
                 <header className={styles.header}>
                     <section className={styles.headerCard}>
