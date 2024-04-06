@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Layout, { name } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import * as Icon from "react-feather";
-import { useRouter, redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const router = useRouter();
