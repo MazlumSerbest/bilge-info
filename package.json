@@ -8,7 +8,7 @@
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.11",
     "@vercel/analytics": "^1.0.1",
-    "next": "latest",
+    "next": "15.5.8",
     "react": "latest",
     "react-dom": "latest",
     "react-feather": "latest"
